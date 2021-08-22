@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.js": "/static/js/main.885f5096.chunk.js",
-    "main.js.map": "/static/js/main.885f5096.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8a4ccffe.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8a4ccffe.js.map",
-    "static/js/2.3cad30ba.chunk.js": "/static/js/2.3cad30ba.chunk.js",
-    "static/js/2.3cad30ba.chunk.js.map": "/static/js/2.3cad30ba.chunk.js.map",
-    "index.html": "/index.html",
-    "static/js/2.3cad30ba.chunk.js.LICENSE.txt": "/static/js/2.3cad30ba.chunk.js.LICENSE.txt"
+    "main.js": "/password-creator/static/js/main.885f5096.chunk.js",
+    "main.js.map": "/password-creator/static/js/main.885f5096.chunk.js.map",
+    "runtime-main.js": "/password-creator/static/js/runtime-main.da76f7df.js",
+    "runtime-main.js.map": "/password-creator/static/js/runtime-main.da76f7df.js.map",
+    "static/js/2.3cad30ba.chunk.js": "/password-creator/static/js/2.3cad30ba.chunk.js",
+    "static/js/2.3cad30ba.chunk.js.map": "/password-creator/static/js/2.3cad30ba.chunk.js.map",
+    "index.html": "/password-creator/index.html",
+    "static/js/2.3cad30ba.chunk.js.LICENSE.txt": "/password-creator/static/js/2.3cad30ba.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8a4ccffe.js",
+    "static/js/runtime-main.da76f7df.js",
     "static/js/2.3cad30ba.chunk.js",
     "static/js/main.885f5096.chunk.js"
   ]
