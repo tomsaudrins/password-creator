@@ -37,9 +37,9 @@ body {
     color: #00000094;
     margin: 40px auto 10px auto;
     padding: 40px 40px 20px 40px;
-    width: 40%;
+    width: 100%;
     text-align: left;
-    background: #0b100a12;
+    background: #0b100a0d;
     border-radius: 3%;
     letter-spacing: 0.8px;
     max-width: 550px;
@@ -53,6 +53,9 @@ body {
     border: none;
     border-radius: 10px;
     letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1.3em;
+    background-color: white;
 }
 
 .right-align {
@@ -70,4 +73,19 @@ body {
 
 .type-value {
     font-size: 1.5em;
+}
+
+@media (max-width: 635px) {
+    .App {
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+    }
+    #root {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .header {
+        margin-top: 45px;
+    }
 }
