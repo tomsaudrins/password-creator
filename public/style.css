@@ -7,9 +7,6 @@
 
 body {
     background: #18efeb;
-    /** app: #ffffff45 body #18efeb **/
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
     height: 100vh;
 }
 
@@ -22,12 +19,24 @@ body {
 .footer {
     text-align: center;
     font-size: 1.3em;
+    margin: 60px auto 0px auto;
+}
+
+.social {
+    display: inline-block;
+    margin: 0px 20px;
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.social-name {
+    margin-left: 3px;
 }
 
 .App {
-    color: #00000087;
+    color: #000000c9;
     margin: 40px auto 10px auto;
-    padding: 40px 40px 120px 40px;
+    padding: 40px 40px 20px 40px;
     width: 40%;
     text-align: left;
     background: #0b100a12;

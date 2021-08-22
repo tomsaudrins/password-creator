@@ -20,7 +20,7 @@ const Form = () => {
   }, [valueLowercase, valueUppercase, valueSpecial]);
 
   return (
-    <form>
+    <form method="POST">
       <PasswordField password={password} setPassword={setPassword} />
       <Selector
         type="uppercase"
