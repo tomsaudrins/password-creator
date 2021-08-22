@@ -3,7 +3,7 @@ import Social from "./Social";
 
 const Footer = () => {
   return (
-    <div class="footer">
+    <div className="footer">
       <Social
         name="Github"
         href="https://github.com/tomsaudrins"
