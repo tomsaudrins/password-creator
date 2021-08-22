@@ -1,29 +1,47 @@
-import Selector from './Selector'
-import PasswordField from './PasswordField'
-import {useState, useEffect} from 'react'
+import Selector from "./Selector";
+import PasswordField from "./PasswordField";
+import Footer from "./Footer";
+import { useState, useEffect } from "react";
+import generatePassword from "./generatePassword";
 
 const Form = () => {
-    const [password, setPassword] = useState('');
-    const [valueUppercase, setValueUppercase] = useState("5")
-    const [valueLowercase, setValueLowercase] = useState("7")
-    const [valueSpecial, setValueSpecial] = useState("2")
-    
-    const generatePassword = () => {
-        return "123"
-    }
+  const [password, setPassword] = useState("");
+  const [valueUppercase, setValueUppercase] = useState("5");
+  const [valueLowercase, setValueLowercase] = useState("7");
+  const [valueSpecial, setValueSpecial] = useState("2");
 
-    useEffect(() => {
-        let password = generatePassword();
-        setPassword(password);
-    }, [valueLowercase, valueUppercase, valueSpecial]);
+  useEffect(() => {
+    let password = generatePassword(
+      valueUppercase,
+      valueLowercase,
+      valueSpecial
+    );
+    setPassword(password);
+  }, [valueLowercase, valueUppercase, valueSpecial]);
 
-    return (
-        <form action="">
-            <PasswordField password={password}/>
-            <Selector type="uppercase" value={valueUppercase} setValue={setValueUppercase} setPassword={setPassword}/>
-            <Selector type="lowercase" value={valueLowercase} setValue={setValueLowercase} setPassword={setPassword}/>
-            <Selector type="special" value={valueSpecial} setValue={setValueSpecial} setPassword={setPassword}/>
-        </form>
-    )
-}
+  return (
+    <form>
+      <PasswordField password={password} setPassword={setPassword} />
+      <Selector
+        type="uppercase"
+        value={valueUppercase}
+        setValue={setValueUppercase}
+        setPassword={setPassword}
+      />
+      <Selector
+        type="lowercase"
+        value={valueLowercase}
+        setValue={setValueLowercase}
+        setPassword={setPassword}
+      />
+      <Selector
+        type="special"
+        value={valueSpecial}
+        setValue={setValueSpecial}
+        setPassword={setPassword}
+      />
+      <Footer />
+    </form>
+  );
+};
 export default Form;
