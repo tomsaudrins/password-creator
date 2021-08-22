@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="footer">
       <Social
         name="Github"
-        href="https://github.com/tomsaudrins"
+        href="https://github.com/tomsaudrins/password-creator"
         Icon={SiGithub}
       />
       <Social
