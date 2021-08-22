@@ -6,6 +6,9 @@ Application has been developed with React and Node.
 # Live Demo
 https://tomsaudrins.github.io/password-creator/
 
+# Running the application
+npm start
+
 # TODO
 Make the site responsive / mobile version looks bad for now.
 Add common password requirements as a checkbox.
