@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro:300);
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Advent Pro", sans-serif;
+}
+
+body {
+    background: #18efeb;
+    height: 100vh;
+}
+
+.header {
+    padding-bottom: 60px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 60px auto 0px auto;
+}
+
+.social {
+    display: inline-block;
+    margin: 0px 20px;
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.social-name {
+    margin-left: 3px;
+}
+
+.App {
+    color: #00000094;
+    margin: 40px auto 10px auto;
+    padding: 40px 40px 20px 40px;
+    width: 40%;
+    text-align: left;
+    background: #0b100a12;
+    border-radius: 3%;
+    letter-spacing: 0.8px;
+    max-width: 550px;
+}
+
+.password-input-field {
+    margin-bottom: 30px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+
+.right-align {
+    float: right;
+}
+
+.selector-input-field {
+    margin: 10px 0;
+    height: 30px;
+}
+
+.max-width {
+    width: 100%;
+}
+
+.type-value {
+    font-size: 1.5em;
+}
