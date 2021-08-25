@@ -2,7 +2,7 @@ import Selector from "./Selector";
 import PasswordField from "./PasswordField";
 import Footer from "./Footer";
 import { useState, useEffect } from "react";
-import generatePassword from "./generatePassword";
+import generatePassword from "../Utils/generatePassword";
 import Button from "./Button";
 
 const Form = () => {
