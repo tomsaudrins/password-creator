@@ -3,12 +3,20 @@ import PasswordField from "./PasswordField";
 import Footer from "./Footer";
 import { useState, useEffect } from "react";
 import generatePassword from "./generatePassword";
+import Button from "./Button";
 
 const Form = () => {
   const [password, setPassword] = useState("");
   const [valueUppercase, setValueUppercase] = useState("5");
   const [valueLowercase, setValueLowercase] = useState("7");
   const [valueSpecial, setValueSpecial] = useState("2");
+
+  const generateButtonClick = (e) => {
+    e.preventDefault();
+    setPassword(
+      generatePassword(password, valueUppercase, valueLowercase, valueSpecial)
+    );
+  };
 
   useEffect(() => {
     let password = generatePassword(
@@ -39,6 +47,10 @@ const Form = () => {
         value={valueSpecial}
         setValue={setValueSpecial}
         setPassword={setPassword}
+      />
+      <Button
+        text="Generate a new password"
+        onClick={(e) => generateButtonClick(e)}
       />
       <Footer />
     </form>
